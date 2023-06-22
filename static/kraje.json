@@ -1,0 +1,87 @@
+{"seznam": [
+{"kraj": "praha", "id": 26, "r": 225, "g": 112, "b": 112},
+
+{"kraj": "karlovarsky", "id": 16, "r": 0, "g": 0, "b": 255},
+{"kraj": "karlovarsky", "id": 24, "r": 0, "g": 0, "b": 95},
+{"kraj": "karlovarsky", "id": 19, "r": 0, "g": 0, "b": 95},
+
+{"kraj": "ustecky", "id": 3, "r": 255, "g": 0, "b": 0},
+{"kraj": "ustecky", "id": 10, "r": 95, "g": 0, "b": 0},
+{"kraj": "ustecky", "id": 15, "r": 95, "g": 0, "b": 0},
+{"kraj": "ustecky", "id": 9, "r": 95, "g": 0, "b": 0},
+{"kraj": "ustecky", "id": 6, "r": 95, "g": 0, "b": 0},
+{"kraj": "ustecky", "id": 8, "r": 95, "g": 0, "b": 0},
+{"kraj": "ustecky", "id": 0, "r": 95, "g": 0, "b": 0},
+
+{"kraj": "liberecky", "id": 1, "r": 0, "g": 255, "b": 0},
+{"kraj": "liberecky", "id": 4, "r": 0, "g": 125, "b": 0},
+{"kraj": "liberecky", "id": 2, "r": 0, "g": 125, "b": 0},
+{"kraj": "liberecky", "id": 5, "r": 0, "g": 125, "b": 0},
+
+{"kraj": "kralovehradecky", "id": 18, "r": 0, "g": 255, "b": 255},
+{"kraj": "kralovehradecky", "id": 11, "r": 0, "g": 130, "b": 90},
+{"kraj": "kralovehradecky", "id": 7, "r": 0, "g": 130, "b": 90},
+{"kraj": "kralovehradecky", "id": 12, "r": 0, "g": 130, "b": 90},
+{"kraj": "kralovehradecky", "id": 21, "r": 0, "g": 130, "b": 90},
+
+{"kraj": "pardubicky", "id": 27, "r": 255, "g": 140, "b": 0},
+{"kraj": "pardubicky", "id": 29, "r": 95, "g": 95, "b": 0},
+{"kraj": "pardubicky", "id": 34, "r": 95, "g": 95, "b": 0},
+{"kraj": "pardubicky", "id": 38, "r": 95, "g": 95, "b": 0},
+
+{"kraj": "stredocesky", "id": 23, "r": 90, "g": 90, "b": 90},
+{"kraj": "stredocesky", "id": 22, "r": 90, "g": 90, "b": 90},
+{"kraj": "stredocesky", "id": 14, "r": 90, "g": 90, "b": 90},
+{"kraj": "stredocesky", "id": 13, "r": 90, "g": 90, "b": 90},
+{"kraj": "stredocesky", "id": 20, "r": 90, "g": 90, "b": 90},
+{"kraj": "stredocesky", "id": 28, "r": 90, "g": 90, "b": 90},
+{"kraj": "stredocesky", "id": 33, "r": 90, "g": 90, "b": 90},
+{"kraj": "stredocesky", "id": 39, "r": 90, "g": 90, "b": 90},
+{"kraj": "stredocesky", "id": 43, "r": 90, "g": 90, "b": 90},
+{"kraj": "stredocesky", "id": 32, "r": 90, "g": 90, "b": 90},
+
+{"kraj": "plzensky", "id": 40, "r": 255, "g": 140, "b": 0},
+{"kraj": "plzensky", "id": 54, "r": 95, "g": 95, "b": 0},
+{"kraj": "plzensky", "id": 50, "r": 95, "g": 95, "b": 0},
+{"kraj": "plzensky", "id": 37, "r": 95, "g": 95, "b": 0},
+{"kraj": "plzensky", "id": 41, "r": 95, "g": 95, "b": 0},
+
+{"kraj": "jihocesky", "id": 67, "r": 255, "g": 255, "b": 255},
+{"kraj": "jihocesky", "id": 64, "r": 95, "g": 150, "b": 125},
+{"kraj": "jihocesky", "id": 52, "r": 95, "g": 150, "b": 125},
+{"kraj": "jihocesky", "id": 70, "r": 95, "g": 150, "b": 125},
+{"kraj": "jihocesky", "id": 66, "r": 95, "g": 150, "b": 125},
+{"kraj": "jihocesky", "id": 60, "r": 95, "g": 150, "b": 125},
+{"kraj": "jihocesky", "id": 58, "r": 95, "g": 150, "b": 125},
+
+{"kraj": "vysocina", "id": 53, "r": 0, "g": 255, "b": 0},
+{"kraj": "vysocina", "id": 62, "r": 0, "g": 125, "b": 0},
+{"kraj": "vysocina", "id": 47, "r": 0, "g": 125, "b": 0},
+{"kraj": "vysocina", "id": 46, "r": 0, "g": 125, "b": 0},
+{"kraj": "vysocina", "id": 51, "r": 0, "g": 125, "b": 0},
+
+{"kraj": "jihomoravsky", "id": 63, "r": 255, "g": 0, "b": 0},
+{"kraj": "jihomoravsky", "id": 55, "r": 95, "g": 0, "b": 0},
+{"kraj": "jihomoravsky", "id": 69, "r": 95, "g": 0, "b": 0},
+{"kraj": "jihomoravsky", "id": 71, "r": 95, "g": 0, "b": 0},
+{"kraj": "jihomoravsky", "id": 59, "r": 95, "g": 0, "b": 0},
+{"kraj": "jihomoravsky", "id": 68, "r": 95, "g": 0, "b": 0},
+
+{"kraj": "zlinsky", "id": 61, "r": 255, "g": 112, "b": 112},
+{"kraj": "zlinsky", "id": 56, "r": 90, "g": 90, "b": 90},
+{"kraj": "zlinsky", "id": 57, "r": 90, "g": 90, "b": 90},
+{"kraj": "zlinsky", "id": 65, "r": 90, "g": 90, "b": 90},
+
+{"kraj": "olomoucky", "id": 45, "r": 255, "g": 255, "b": 255},
+{"kraj": "olomoucky", "id": 17, "r": 95, "g": 150, "b": 125},
+{"kraj": "olomoucky", "id": 31, "r": 95, "g": 150, "b": 125},
+{"kraj": "olomoucky", "id": 48, "r": 95, "g": 150, "b": 125},
+{"kraj": "olomoucky", "id": 49, "r": 95, "g": 150, "b": 125},
+
+{"kraj": "moravskoslezsky", "id": 36, "r": 0, "g": 0, "b": 255},
+{"kraj": "moravskoslezsky", "id": 25, "r": 0, "g": 0, "b": 95},
+{"kraj": "moravskoslezsky", "id": 30, "r": 0, "g": 0, "b": 95},
+{"kraj": "moravskoslezsky", "id": 35, "r": 0, "g": 0, "b": 95},
+{"kraj": "moravskoslezsky", "id": 42, "r": 0, "g": 0, "b": 95},
+{"kraj": "moravskoslezsky", "id": 44, "r": 0, "g": 0, "b": 95}
+]}
