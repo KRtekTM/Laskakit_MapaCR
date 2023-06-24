@@ -4,9 +4,14 @@
 #include <ArduinoJson.h>
 #include <HTTPClient.h>
 
+// Customizable variables
 #define DEBUG false
 #include "WiFi_Config.h"
 const char *hostname = "laskakitmapa";
+uint32_t t, last24HourTaskTime = 0;  // Refreshovaci timestamp
+uint32_t delay10 = 30000;            // Prodleva mezi aktualizaci dat, 30 vterin
+uint32_t startupDelay = 10000;       // Zobraz vlajku na 10 vterin
+uint8_t jas = 5;                     // Vychozi jas
 
 // URL endpoints
 const char *urlFlag = "https://raw.githubusercontent.com/KRtekTM/Laskakit_MapaCR/master/static/vlajkaCR.json";
@@ -29,6 +34,8 @@ WebServer server(80);
 // ktery bude obsahovat instrukce pro vsech 72 RGB LED
 StaticJsonDocument<10000> doc;
 
+
+// TMEP city ID mapping to correct LED id
 int XX = -1;
 int LEDsTMEP[77] = {
   24, 19, 16, 10, 15, 9, 6, 8, 3,
@@ -41,16 +48,9 @@ int LEDsTMEP[77] = {
   28, 33, 39, 43, 32, XX, XX, 26
 };
 
-uint32_t t, last24HourTaskTime = 0;  // Refreshovaci timestamp
-uint32_t delay10 = 30000;            // Prodleva mezi aktualizaci dat, 30 vterin
-uint32_t startupDelay = 10000;       // Zobraz vlajku na 10 vterin
-uint8_t jas = 5;                     // Vychozi jas
 
-bool firstRun = true;
-
-float maxThreshold = -25;
-float minThreshold = 45;
-
+// Map selector
+float maxThreshold, minThreshold;
 enum SelectedMap {
   MapRain,
   MapTemp,
@@ -63,6 +63,7 @@ enum SelectedMap {
 };
 SelectedMap currentMap;
 bool currentMapTMEP = false;
+bool firstRun = true;
 
 // Dekoder JSONu a rozsvecovac svetylek
 int jsonDecoder(String s, bool log) {
