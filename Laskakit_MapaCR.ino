@@ -1,3 +1,13 @@
+/*
+* Firmware pro LaskaKit Mapu ČR
+* -----------------------------
+* Autor: Ondřej Kotas, KRtkovo.eu
+* Verze: 0.2
+* https://github.com/KRtekTM/Laskakit_MapaCR
+*
+* Postaveno na základě kódu od Jakuba Čížka: https://github.com/jakubcizek/pojdmeprogramovatelektroniku/tree/master/SrazkovyRadar
+*/
+
 #include <WiFi.h>
 #include <WebServer.h>
 #include <Adafruit_NeoPixel.h>
@@ -278,6 +288,10 @@ void processMapRequest(const String &arg, SelectedMap mapType, bool selectedIsTM
   }
 }
 
+float getMiddleNumber(float minVal, float maxVal) {
+  return minVal + (maxVal - minVal) / 2;
+}
+
 // Tuto funkci HTTP server zavola v pripade HTTP GET/POST pzoadavku na korenovou cestu /
 void httpDotaz(void) {
   // Pokud HTTP data obsahuji parametr mesta
@@ -327,6 +341,9 @@ void httpDotaz(void) {
       ".maximum {\n"
       "  color: #FF0000;\n"
       "}\n"
+      ".median {\n"
+      "  color: #00FF00;\n"
+      "}\n"
       "\n");
     server.send(200, "text/css", cssContent);
   }
@@ -359,9 +376,9 @@ void httpDotaz(void) {
                                                                 "  <h1>Ovládání mapy</h1>\n"
                                                                 "  <h2>Zvolený režim: "
                                   + (GetSelectedMapMode()) + "</h2>\n"
-                                  + (currentMapTMEP ? String("<p><span class=\"minimum\">Minimum: " + String(minThreshold) + GetUnitForMapMode(currentMap) + "</span><br />\n<span class=\"maximum\">Maximum: " + String(maxThreshold) + GetUnitForMapMode(currentMap) + "</span></p>\n") : String(""))
+                                  + (currentMapTMEP ? String("<p><span class=\"minimum\">Minimum: " + String(minThreshold) + GetUnitForMapMode(currentMap) + "</span><br />\n<span class=\"median\">" + String(getMiddleNumber(minThreshold, maxThreshold)) + GetUnitForMapMode(currentMap) + "</span><br />\n<span class=\"maximum\">Maximum: " + String(maxThreshold) + GetUnitForMapMode(currentMap) + "</span></p>\n") : String(""))
                                   + (currentMap == MapRain ? String("<p><span class=\"minimum\">Minimum: 0 mm/h</span><br />\n<span class=\"maximum\">Maximum: ∞ mm/h</span></p>\n") : String("")) + "\n"
-                                                                                                                                       "  <button onclick=\"sendRainRequest()\" class=\""
+                                  "  <button onclick=\"sendRainRequest()\" class=\""
                                   + (currentMap == MapRain ? String("selected") : String("")) + "\">Zobrazit srážky</button>\n"
                                                                                                 "  <button onclick=\"sendTempRequest()\" class=\""
                                   + (currentMap == MapTemp ? String("selected") : String("")) + "\">Zobrazit teplotní mapu</button>\n"

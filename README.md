@@ -3,8 +3,8 @@ Prototyp vlastního FW pro LaskaKit mapu ČR. Jde o upravenou verzi FW od Jakuba
                   
 Volitelné režimy zobrazitelné na mapě:
 - aktuální srážky
-- teplotní mapu, vlhkost, tlak, prašnost (z čidel TMEP)
-- vlajku ČR (při startu nebo při zvoleném režimu)
+- teplotní mapa, vlhkost, tlak, prašnost (z čidel TMEP)
+- vlajka ČR (při startu nebo při zvoleném režimu)
 - krajská města
 - kraje
 
