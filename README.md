@@ -1,6 +1,7 @@
 # Laskakit_MapaCR
-Prototyp vlastního FW pro LaskaKit mapu ČR. Jde o upravenou verzi FW od Jakuba Čížka ze Živě.
-Aktuálně mapa zobrazuje:
+Prototyp vlastního FW pro LaskaKit mapu ČR. Jde o upravenou verzi FW od Jakuba Čížka ze Živě.cz: https://www.zive.cz/clanky/naprogramovali-jsme-radarovou-mapu-ceska-ukaze-kde-prave-prsi-a-muzete-si-ji-dat-i-na-zed/sc-3-a-222111/default.aspx                    
+                  
+Volitelné režimy zobrazitelné na mapě:
 - aktuální srážky
 - teplotní mapu, vlhkost, tlak, prašnost (z čidel TMEP)
 - vlajku ČR (při startu nebo při zvoleném režimu)
@@ -13,7 +14,22 @@ Náhled funkčnosti na YouTube:
 https://www.youtube.com/watch?v=hC3fB_leQMU
 [![youtube](https://img.youtube.com/vi/hC3fB_leQMU/maxresdefault.jpg)](https://www.youtube.com/watch?v=hC3fB_leQMU)
 
-JSON: https://wiki.tmep.cz/doku.php?id=ruzne:led_mapa_okresu_cr
+
+## Instalace
+Pro instalaci ESP32 desek do ArduinoIDE následujte tento návod: https://navody.dratek.cz/navody-k-produktum/jednoducha-instalace-esp32-do-arduino-ide.html         
+                  
+Do ArduinoIDE si doinstalujte následující knihovny:
+- Adafruit_NeoPixel
+- ArduinoJson
+
+V souboru WiFi_Config.h si upravte SSID a heslo k vaší WiFi síti.
+
+## Použití
+Po nahrání sketche do ESP32 v LaskaKit mapě si otevřete SerialMonitor v ArduinoIDE, nastavte rychlost 115200 baudů a sledujte výstup. Mapa vám po připojení k WiFi vypíše svou IP adresu, přes kterou můžete přistupovat k ovládacímu rozhraní.
+
+
+## Poznámky
+JSON TMEP: https://wiki.tmep.cz/doku.php?id=ruzne:led_mapa_okresu_cr
 
 LEDs sequence and districts
 | Real LaskaKit ID | TMEP ID | Okres |
